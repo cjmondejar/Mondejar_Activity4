@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the model
-model = pickle.load(open('prediction_model.pkl', 'rb'))
+train_model = pickle.load(open('prediction_model.pkl', 'rb'))
 
 
 @app.route('/')
